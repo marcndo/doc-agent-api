@@ -16,3 +16,4 @@ langchain
 langchain-openai
 # For reading environment variables (like API keys)
 python-dotenv
+numpy

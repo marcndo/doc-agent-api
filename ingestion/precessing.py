@@ -47,7 +47,6 @@ def process_url(url):
         print(f"Error fetch {url}: {e}")
     return " "
     
-
 def process_csv(csv):
     pass
 
