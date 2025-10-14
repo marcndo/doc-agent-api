@@ -1,9 +1,9 @@
 # For parsing web pages
-beautifulsoup4
+beautifulsoup4~=4.14.2
 # For the web server API
-fastapi
+fastapi~=0.118.0
 # For running the FastAPI server
-uvicorn[standard]
+uvicorn[standard]~=0.37.0
 # For handling PDFs
 pypdf
 # For creating text embeddings
@@ -11,9 +11,12 @@ sentence-transformers
 # For the vector database
 faiss-cpu
 # To interact with LLMs easily
-langchain
+langchain~=0.3.27
 # For LLM API integration (we'll start with OpenAI for simplicity)
 langchain-openai
 # For reading environment variables (like API keys)
-python-dotenv
-numpy
+python-dotenv~=1.1.1
+numpy~=1.26.4
+streamlit~=1.50.0
+requests~=2.32.5
+PyPDF2~=3.0.1
