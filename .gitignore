@@ -1,0 +1,20 @@
+# System files
+.DS_Store
+
+# Environment files
+.env
+
+# IDE settings
+.idea/
+
+# Python cache
+__pycache__/
+*.pyc
+
+# Project-specific ignores
+api/__pycache__/rag_handler.cpython-311.pyc
+embeddings/.DS_Store
+embeddings/__pycache__/
+embeddings/test_faiss_index.idx
+ingestion/.DS_Store
+ingestion/__pycache__/
