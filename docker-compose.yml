@@ -1,0 +1,24 @@
+version: '3.8'
+
+services:
+  backend:
+    build:
+      context: .
+      dockerfile: api/Dockerfile
+    ports:
+      - "8000:8000"
+    environment:
+      # Pass the OpenAI API key from your .env file into the container
+      - OPENAI_API_KEY=${OPENAI_API_KEY}
+
+  frontend:
+    build:
+      context: .
+      dockerfile: frontend/Dockerfile
+    ports:
+      - "8501:8501"
+    depends_on:
+      - backend
+    environment:
+      # Tell the frontend how to reach the backend service
+      - API_URL=http://backend:8000
